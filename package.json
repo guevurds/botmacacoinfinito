@@ -2,10 +2,21 @@
   "name": "macaco_infinito_bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
   },
   "author": "Manoel Rocha",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "discord": "^0.8.2",
+    "discord.js": "^14.2.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
